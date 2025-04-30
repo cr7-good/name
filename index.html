@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>警告！系统病毒检测</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFDDC1;
+      color: #FF0000;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 24px;
+    }
+    .button {
+      background-color: #FF0000;
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<h1>⚠️ 警告！系统检测到病毒⚠️</h1>
+<p>您的设备已感染病毒！正在隔离文件…</p>
+<button class="button" onclick="revealMessage()">点击确认修复</button>
+
+<div id="message" class="hidden">
+  <h2>喵喵喵😈</h2>
+  <p>修复中！</p>
+  <img src="https://i.pinimg.com/originals/da/f2/67/daf2676cc4eaf51f92d4311a2f75c337.gif" alt="C:\Users\user\Pictures\Screenshots\屏幕截图 2025-04-15 113907.png" width="200">
+</div>
+
+<script>
+  function revealMessage() {
+    document.getElementById('message').classList.remove('hidden');
+    document.querySelector('p').innerHTML = '修复失败！🎉';
+    document.querySelector('button').innerHTML = '点击按钮启动自爆模式！';
+  }
+</script>
+
+</body>
+</html>
